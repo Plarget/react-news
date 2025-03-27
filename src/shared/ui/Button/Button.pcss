@@ -1,0 +1,27 @@
+@import "@/shared/styles/mixins.pcss";
+@import "@/shared/styles/media.pcss";
+
+.button {
+    @mixin flex-center;
+    font-family: "Inter", sans-serif;
+    color: var(--color-main-2);
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    background-color: var(--color-main);
+    border-radius: 12px;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    padding-inline: 30px;
+    transition: 0.25s background-color;
+
+    @media (--mobile) {
+        height: 45px;
+        padding-inline: 15px;
+    }
+
+    &--main-3 {
+        background-color: var(--color-main-3);
+    }
+}

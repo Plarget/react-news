@@ -1,0 +1,54 @@
+@import "@/shared/styles/mixins.pcss";
+@import "@/shared/styles/media.pcss";
+
+.article {
+    box-shadow: 0 4px 20px rgba(34, 60, 80, 0.15);
+    border-radius: 20px;
+    padding: 24px;
+
+    @media (--mobile-xs) {
+        padding: 14px;
+    }
+
+    &__image {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-bottom: 12px;
+
+        @media (--mobile-xs) {
+            height: 220px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        margin-bottom: 20px;
+
+        @media (--mobile-xs) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__time {
+        margin-right: auto;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: flex-end;
+        column-gap: 8px;
+    }
+
+    &__button {
+        &-icon {
+            --icon-size: 24px;
+            width: var(--icon-size);
+            height: var(--icon-size);
+        }
+    }
+}

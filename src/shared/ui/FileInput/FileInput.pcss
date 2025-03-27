@@ -1,0 +1,23 @@
+@import "@/shared/styles/mixins.pcss";
+@import "@/shared/styles/media.pcss";
+
+.file-input {
+    &__label {
+        display: block;
+        color: var(--color-gray-dark);
+        font-size: 12px;
+        line-height: 1;
+        font-weight: 500;
+        padding-bottom: 8px;
+    }
+
+    &__control {
+        display: block;
+    }
+
+    &__error {
+        font-size: 13px;
+        line-height: 0;
+        color: var(--color-red);
+    }
+}

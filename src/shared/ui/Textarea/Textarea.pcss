@@ -1,0 +1,35 @@
+@import "@/shared/styles/mixins.pcss";
+@import "@/shared/styles/media.pcss";
+
+.textarea {
+  &__control {
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    padding: 15px;
+    height: 180px;
+    min-height: 100px;
+    border: 1px solid var(--color-gray);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    &--error {
+      color: var(--color-red);
+    }
+  }
+
+  &__label {
+    display: block;
+    color: var(--color-gray-dark);
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 500;
+    padding-bottom: 8px;
+  }
+
+  &__error {
+    font-size: 13px;
+    line-height: 0;
+    color: var(--color-red);
+  }
+}

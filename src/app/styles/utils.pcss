@@ -1,0 +1,39 @@
+@import "@/shared/styles/media.pcss";
+
+.visible-mobile {
+    @media (--mobile-above) {
+        display: none !important;
+    }
+}
+
+.hidden-mobile {
+    @media (--mobile) {
+        display: none !important;
+    }
+}
+
+
+.container {
+    max-width: calc(1300px + var(--container-padding) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+}
+
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-main);
+}
+
+.text {
+    font-size: 16px;
+
+    &--small {
+        font-size: 14px;
+    }
+
+    &--gray-dark {
+        color: var(--color-gray-dark);
+    }
+}
